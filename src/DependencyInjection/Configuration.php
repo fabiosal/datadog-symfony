@@ -54,7 +54,7 @@ class Configuration implements ConfigurationInterface
                 ->defaultValue(8125)
             ->end()
             ->scalarNode('namespace')
-                ->cannotBeEmpty()
+                ->defaultNull()
             ->end()
             ->arrayNode('tags')
                 ->prototype('scalar')->end()
